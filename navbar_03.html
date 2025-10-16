@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("./images/bgi.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        height: 100vh;
+        margin: 0;
+      }
+      .nav1 {
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .head {
+        margin: 0;
+        font-size: 22px;
+        padding-right: 300px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 0;
+      }
+      .nav1 ul {
+        
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav1 ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .nav1 ul li a:hover {
+        color: #ffcc00;
+      }
+
+      /* Right-side button */
+      .book-btn {
+        background-color: #ffcc00;
+        color: black;
+        border: none;
+        padding: 8px 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .book-btn:hover {
+        background-color: #ffc107;
+      }
+
+      /* Container holding all items */
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .cont{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 100vh;
+      }
+      h1{
+        text-align: center;
+        font-size: 110px;
+        font-family:'Times New Roman', Times, serif;
+        font-style: italic;
+        padding: 0;
+        margin: 0;
+      }
+      p{
+        background-color: #eab60b;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: bold;
+      }
+      .res{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: #ffcc00;
+      }
+      .res:hover{
+        background-color: #ffc107;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav1">
+        <ul>
+          <h3 class="head">KK GUEST HOUSE</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="book-btn">Book Now</button>
+      </nav>
+    </div>
+    <div class="cont">
+      <h1>Book Your Stay</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+        nemo.
+      </p>
+      <button class="res">Reserve Now</button>
+    </div>
+  </body>
+</html>
