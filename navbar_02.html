@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar Variations</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f07272;
+        color: aliceblue;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav li {
+        margin: 10px 0;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s ease;
+        padding-left: 20px;
+      }
+      nav a::before {
+        content: "->";
+        color: brown;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+      }
+      nav a:hover::before {
+        opacity: 1;
+        color: blue;
+        transform: translateX(0);
+      }
+      nav a:hover {
+        transform: translateX(8px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>::Before Pseudo-Element</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
