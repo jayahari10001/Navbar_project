@@ -21,7 +21,9 @@ You can open these files directly in your browser, or check them live through **
 
 ## 🌍 Live Demo (GitHub Pages)
 Once enabled (see guide below), your project will be available at:  
-👉 "https://jayahari10001.github.io/Navbar_project/"
+👉 "https://jayahari10001.github.io/Navbar_project/navbar.html"
+👉 "https://jayahari10001.github.io/Navbar_project/navbar_02.html"
+👉 "https://jayahari10001.github.io/Navbar_project/navbar_03.html"
 
 ## 🧑‍💻 Author
 **Jayahari E**  
